@@ -30,3 +30,5 @@ if (launchReady) {
 } else {
    console.log('Launch scrubbed.');
 }
+
+// I think that the logic error will in line 27. Should be: if (!launchReady) {
