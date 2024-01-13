@@ -20,7 +20,7 @@ let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
 if (astronautCount === 7) {
-    console.log("Ok! Total number of astronauts does not exceeed 7.");
+    console.log("Ok! Total number of astronauts does not exceed 7.");
 } else if (astronautCount > 7) {
     console.log("Sorry! Number of astronauts cannot exceed 7.");
 } else { 
@@ -63,15 +63,15 @@ if (fuelLevel === 100) {
 // add logic below to verify the weather status is clear
 
 if (weatherStatus === "clear") {
-    console.log("The weather is clear");    
+    console.log("D: The weather is clear");    
 } else {
-    console.log("The weather is not clear");
+    console.log("d: The weather is not clear");
 }
 
 
 // Verify shuttle launch can proceed based on above conditions
 
-if (astronautStatus === "ready" && totalMassKg <= maximumMassLimit && (fuelTempCelsius > maximumFuelTemp || fuelTempCelsius < minimumFuelTemp) && fuelLevel === 100 && weatherStatus === "clear" && preparedForLiftOff){
+if (astronautStatus === "ready" && totalMassKg <= maximumMassLimit && (fuelTempCelsius < maximumFuelTemp || fuelTempCelsius > minimumFuelTemp) && fuelLevel === 100 && weatherStatus === "clear" && preparedForLiftOff){
     console.log("Shuttle launch is a Go!");
 } else {
     console.log("Shuttle lauch is not a Go! \n");
