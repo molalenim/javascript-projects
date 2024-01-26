@@ -5,6 +5,6 @@ function printMessage() {
 }
 
 printMessage();
-message = "Goodbye";
+message = "Goodbye"; //So it looks that here msg gets reasigned
 printMessage();
 
