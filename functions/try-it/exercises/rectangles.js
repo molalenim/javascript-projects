@@ -31,7 +31,7 @@ function makeRectangle(width, height, character) {
     return rectangle.slice(0, -1);
 }
 
-console.log(makeRectangle(5, 3, "#"));
+console.log(makeRectangle(5, 3));
 
   
   function makeDownwardStairs(size){
@@ -47,11 +47,48 @@ console.log(makeRectangle(5, 3, "#"));
 
 
   function makeSpaceLine(numSpaces, numChars) {
-
-
+    let line = "";
+    let spaces = "";
+   
+    for (let j = 0; j < numSpaces; j++) {
+      spaces += " "; // I used $ to tell if I indeed have spaces
+      
+    }
+    let chars = makeLine(numChars);
+    line = spaces + chars + spaces;  
+    return line;
   }
   console.log(makeSpaceLine(3, 5));
 
+
+  function makeIsoscelesTriangle(height){
+    let triangle = "";
+    for (let i = 0; i < height; i++) {
+      triangle += (makeSpaceLine(height - i - 1, 2 * i + 1) + "\n");
+      
+    }
+    return triangle.slice(0, -1); 
+  }
+
+  console.log(makeIsoscelesTriangle(5));
+
+
+function makeDiamond(height){
+
+  let triangleUp = makeIsoscelesTriangle(height);
+  //console.log(triangleUp);
+
+   let triangleDown = triangleUp.slice(1).split("").reverse().join("");
+  //console.log(triangleDown);
+
+  // let diamond = triangleUp.concat(triangleDown);
+  // console.log(diamond);
+  let diamond = triangleUp + "\n" + triangleDown;
+
+return diamond;
+}
+
+console.log(makeDiamond(5));
 
 
 
