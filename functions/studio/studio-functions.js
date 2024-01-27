@@ -48,6 +48,7 @@ function reverseCharacters(element){
 
         }      
 } 
+
 console.log(reverseCharacters(digit1));
 console.log(reverseCharacters(digit2));
 console.log(reverseCharacters(digit3));
@@ -79,7 +80,7 @@ function reverseArray(arr){
     return newArray.reverse();
     
 }
-console.log(reverseCharacters(arrayTest1));
+console.log(reverseArray(arrayTest1));
 
 
 // Bonus Missions
