@@ -49,6 +49,23 @@ function reverseCharacters(element){
         }      
 } 
 
+// function reverseCharacters(i) {
+//     if (typeof(i) == "string") {
+//         let lettersArray = i.split('');
+//         let reversedLettersArray = lettersArray.reverse();
+//         return reversedLettersArray.join('');
+//     }
+//     else if (typeof(i) == "number") {
+//         let numbersString = i.toString();
+//         let numbersArray = numbersString.split('');
+//         let reversedArray = numbersArray.reverse();
+//         let numbersString2 = reversedArray.join('');
+//         return Number(numbersString2);
+//     }
+//  }
+
+
+
 console.log(reverseCharacters(digit1));
 console.log(reverseCharacters(digit2));
 console.log(reverseCharacters(digit3));
